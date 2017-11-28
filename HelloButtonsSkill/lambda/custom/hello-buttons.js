@@ -64,7 +64,7 @@ const main = {
     this.response._addDirective(buildButtonDownAnimationDirective([]));
 
     // we'll say something in the standard way
-    this.response.speak("Welcome to Hello Buttons Skill. Tell me your favorite color.").listen("What is your favorite color?");
+    this.response.speak("Welcome to the color hands game. What color would you like to play with?.").listen("What color would you like to play with?");
 
     // we use the manual mechanism to end the response, because we've modified the response directly
     this.emit(':responseReady');
