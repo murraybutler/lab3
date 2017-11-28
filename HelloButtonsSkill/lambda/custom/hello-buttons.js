@@ -10,6 +10,19 @@ exports.handler = (event, context) => {
   alexa.execute();
 };
 
+const colors = [
+  {name: 'red', value: 'ff0000'},
+  {name: 'blue', value: '0000ff'},
+  {name: 'green', value: '00ff00'},
+  {name: 'purple', value: '7400ff'}
+
+
+];
+
+function getRandomColor() {
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
 const main = {
   'LaunchRequest': function() {
     console.log('LaunchRequest');
