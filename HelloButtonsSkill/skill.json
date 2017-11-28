@@ -1,0 +1,35 @@
+{
+  "skillManifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Hello Buttons"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "distributionCountries": [],
+      "gadgetSupport": {
+        "requirement": "REQUIRED",
+        "numPlayersMin": 1,
+        "numPlayersMax": 1,
+        "minGadgetButtons": 1
+      }
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:063598399582:function:helloButtons"
+        },
+        "interfaces": [
+          {
+            "type": "GAME_ENGINE"
+          },
+          {
+            "type": "GADGET_CONTROLLER"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

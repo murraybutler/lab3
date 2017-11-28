@@ -1,0 +1,36 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": [
+          "cancel"
+        ]
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "FavoriteColorIntent",
+        "samples": [
+          "{color}",
+          "my favorite color is {color}",
+          "I choose {color}",
+          "it is {color}"
+        ],
+        "slots": [
+          {
+            "name": "color",
+            "type": "AMAZON.Color"
+          }
+        ]
+      }
+    ],
+    "invocationName": "hello buttons"
+  }
+}
